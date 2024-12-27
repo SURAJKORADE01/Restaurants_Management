@@ -1,0 +1,46 @@
+<div style="background-image: url('assets/Hotel.png'); background-size: 80ch; height: 100vh; width: 100%; background-position: center;  background-position-x: -8.1%; background-position-y: 65cm;">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="container vh-100 d-flex justify-content-center align-items-center">
+            <div class="card p-4">
+                <div class="text-center">
+                    <h1>Marvellous Restaurant Login Portal</h1>
+                    <h5>You can login here!</h5>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="logIn()"> 
+                    <div class="mb-3">
+                        <label class="form-label">Email address <span style="color: red;">*</span></label>
+                        <input #lemail formControlName="email" type="email" class="form-control" id="lemail" placeholder="Enter email address">
+
+                        <div *ngIf = "loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched" class="text-danger">
+                            Email is required to log in.
+                        </div>
+
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Password <span style="color: red;">*</span></label>
+                        <input #lpass formControlName="password" type="password" class="form-control" id="lpass" placeholder="Enter password">
+                        
+                        <div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched" class="text-danger">
+                            Password is required to log in.
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" (click) = "CheckCredential(lemail.value,lpass.value)">Login</button>
+                    </div>  
+                    
+                </form>
+                <div class="text-center mt-3">
+                    <a style="color: blue;" routerLink="/signup">New User? Click to Sign up</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</div>
+</div>

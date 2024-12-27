@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "Regency",
+      "address": "Satara Road",
+      "email": "Regency@gmail.com",
+      "services": "Thai + Japanese",
+      "mobile": 9090787856
+    },
+    {
+      "id": "2",
+      "name": "Grand Hayat",
+      "address": "Pune 4",
+      "email": "Hayat@gmail.com",
+      "services": "Indian",
+      "mobile": 8087808780
+    },
+    {
+      "id": "3",
+      "name": "Le Meridian",
+      "address": "Pune Mumbai highway",
+      "email": "Meridian@gmail.com",
+      "services": "Chinese",
+      "mobile": 9823982398
+    },
+    {
+      "id": "4",
+      "name": "Shereton Grand",
+      "address": "Koregaon park",
+      "email": "GrandInfo@gmail.com",
+      "services": "Continental",
+      "mobile": 7020702070
+    },
+    {
+      "id": "5",
+      "name": "Radha Krishna",
+      "address": "Bharti Vidyapeeth, Katraj, Pune 411046",
+      "email": "radhakrishna@gmail.com",
+      "services": "Maharashtrian, Sandwich, Ice Cream",
+      "mobile": 9370744741
+    },
+    {
+      "id": "6",
+      "name": "JW Marriott",
+      "address": "Senapati Bapat Road, Pune 411053",
+      "email": "jw.pnqmc.paasha@marriotthotels.com",
+      "services": "Dinner, Drinks",
+      "mobile": "9168624939"
+    },
+    {
+      "id": "7",
+      "name": "Aasmana",
+      "address": "Airport Road, Gold Course Square, Pune 411006",
+      "email": "aasmana@gmail.com",
+      "services": "Indian, Bar, Vegetarian friendly",
+      "mobile": "2067675000"
+    },
+    {
+      "id": "8",
+      "name": "Alto Vino",
+      "address": "JW Marriott Pune, 1st Floor, Senapati Bapat Road, Pune 411053",
+      "email": "jw.pnqmc.altovino@marriotthotels.com",
+      "services": "Italian, Vegetarian friendly",
+      "mobile": "8956469037"
+    },
+    {
+      "id": "9",
+      "name": "Delilah Kitchen Bar",
+      "address": "Aditya Hub, Rahul Nagar, Kothrud, West Pune 411038",
+      "email": "delilah.kitchen@gmail.com",
+      "services": "North Indian, Chinese, Italian",
+      "mobile": "9926511994"
+    },
+    {
+      "id": "10",
+      "name": "Roll Bites",
+      "address": "Chaitanya Park 3, Shop 9, Ravet Near Sahakar Bhawan West Pune 411044",
+      "email": "roll.bites@gmail.com",
+      "services": "Labanese Fast Food",
+      "mobile": "2071967014"
+    },
+    {
+      "id": "11",
+      "name": "Surmay",
+      "address": "Swaroop Complex, Karve Road, West Pune 411004",
+      "email": "surmay.deccan.pune@gmail.com",
+      "services": "Seafood, Maharashtrian, Malvani",
+      "mobile": "9860681111"
+    },
+    {
+      "id": "12",
+      "name": "Tea Trails",
+      "address": "Rainbow Plaza, Pimple Saudagar, West Pune 411027",
+      "email": "tea.trails.pune@mail.com",
+      "services": "Tea, Fast Food",
+      "mobile": "2046508810"
+    },
+    {
+      "id": "13",
+      "name": "Cheesiaano Pizza",
+      "address": "37, Wadgaon Khurd, Sinhagad Road, South Pune 411041",
+      "email": "cheesiaano.pizza@gmail.com",
+      "services": "Pizza, Fast Food",
+      "mobile": "2024391122"
+    },
+    {
+      "id": "14",
+      "name": "Hyderabad Dum Biryani",
+      "address": "Hinjewadi Chowk, Wakad Road, West Pune 411057",
+      "email": "hydrabadi.dum@gmail.com",
+      "services": "Biryani, Chinese",
+      "mobile": "8421127303"
+    }
+  ],
+  "signup": [
+    {
+      "name": "Taj",
+      "email": "TajManagement@gmail.com",
+      "mobile": 9977997799,
+      "password": "password@123",
+      "id": "1"
+    },
+    {
+      "name": "Admin",
+      "email": "Marvellous@gmail.com",
+      "mobile": 7020717020,
+      "password": "Admin@123",
+      "id": "2"
+    },
+    {
+      "id": "",
+      "name": "Suraj Korade",
+      "email": "surajkorade5456@gmail.com",
+      "mobile": "9405885710",
+      "password": "Suraj@12345"
+    }
+  ],
+  "contacts": [
+    {
+      "Name": "Rahul Joshi",
+      "Mobile": 1234567890,
+      "id": "7e1f"
+    },
+    {
+      "Name": "Sandesh Kadam",
+      "Mobile": 9876543210,
+      "id": "6dbc"
+    },
+    {
+      "Name": "Rohit Modi",
+      "Mobile": 6549087123,
+      "id": "9bb6"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<div  style="background-image: url('assets/Hotel.png'); background-size: 80ch; height: 100vh; width: 100%; background-position: center; background-position-x: -7.1%; background-position-y: 65cm;">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="text-center">
+                      <h1>Marvellous Restaurent Portal Sign Up</h1>
+                      <h5>You can Sign Up here!</h5>
+                  </div>
+                  <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                      <div class="mb-3">
+                        <label class="form-label">Name <span style="color: red;">*</span></label>
+                        <input [class.is-invalid]="signupForm.get('name')?.invalid && signupForm.get('name')?.touched" formControlName="name"  type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter your first and last name">
+                        
+                        <div *ngIf="signupForm.get('name')?.hasError('pattern') && signupForm.get('name')?.touched" class="text-danger">
+                          Name must only contain uppercase or lowercase letters.
+                        </div>
+                        
+                        <div *ngIf = "signupForm.get('name')?.hasError('required') && signupForm.get('name')?.touched" class="text-danger">
+                          Name is required.
+                        </div>
+                        
+                      </div>
+                    
+                      <div class="mb-3">
+                        <label class="form-label">Email address <span style="color: red;">*</span></label>
+                        <input [class.is-invalid] = "signupForm.get('email')?.invalid && signupForm.get('email')?.touched" formControlName="email" type="email" class="form-control" id="exampleInputEmail1"  placeholder="Your email address">
+                        
+                        <div *ngIf = "signupForm.get('email')?.hasError('required') && signupForm.get('email')?.touched" class="text-danger">
+                          Email is required.
+                        </div>
+
+                        <div *ngIf="signupForm.get('email')?.hasError('pattern') && signupForm.get('email')?.touched" class="text-danger">
+                          Invalid email format
+                        </div>
+
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label class="form-label">Phone Number <span style="color: red;">*</span></label>
+                        <input [class.is-invalid]="signupForm.get('mobile')?.invalid && signupForm.get('mobile')?.touched"
+                              type="text"
+                              class="form-control"
+                              formControlName="mobile"
+                              placeholder="Enter phone number">
+                        <div *ngIf="signupForm.get('mobile')?.hasError('required') && signupForm.get('mobile')?.touched" class="text-danger">
+                            Phone number is required.
+                        </div>
+                        <div *ngIf="signupForm.get('mobile')?.hasError('minlength') && signupForm.get('mobile')?.touched" class="text-danger">
+                            Phone number must be 10 digits long.
+                        </div>
+                        <div *ngIf="signupForm.get('mobile')?.hasError('maxlength') && signupForm.get('mobile')?.touched" class="text-danger">
+                            Phone number must be 10 digits long.
+                        </div>
+                        <div *ngIf="signupForm.get('mobile')?.hasError('pattern') && signupForm.get('mobile')?.touched" class="text-danger">
+                            Phone number must contain only digits.
+                        </div> 
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label class="form-label">Password <span style="color: red;">*</span></label>
+                        <input [class.is-invalid]="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
+                              formControlName="password"
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                              placeholder="Enter password here">
+                        <div class="text-muted" style="font-size: 0.9em;">
+                          Your password must:
+                          <ul>
+                            <li>Be between 8 and 15 characters long.</li>
+                            <li>Contain at least one uppercase letter.</li>
+                            <li>Contain at least one lowercase letter.</li>
+                            <li>Include at least one number.</li>
+                            <li>Include at least one special character (&#64;, $, !, %, *, ?, &).</li>
+                          </ul>
+                        </div>
+                        <div *ngIf="signupForm.get('password')?.hasError('required') && signupForm.get('password')?.touched" class="text-danger">
+                          Password is required.
+                        </div>
+                        <div *ngIf="signupForm.get('password')?.hasError('minlength') && signupForm.get('password')?.touched" class="text-danger">
+                          Password must be at least 8 characters long.
+                        </div>
+                        <div *ngIf="signupForm.get('password')?.hasError('maxlength') && signupForm.get('password')?.touched" class="text-danger">
+                          Password cannot exceed 15 characters.
+                        </div>
+                        <div *ngIf="signupForm.get('password')?.hasError('pattern') && signupForm.get('password')?.touched" class="text-danger">
+                          Password must meet the specified criteria.
+                        </div>
+                      </div>
+                      <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                      </div>
+                    </form>
+
+                      <div style="text-align: center; margin-top: 0.3cm;">
+                        <a style="color: blue; margin-top: 10px;" routerLink="/login">Already User? Click to Login</a>
+                      </div>
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
